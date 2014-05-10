@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cookie</title>
+    <meta charset="utf-8">
+    <style>
+    </style>
+</head>
+<body>
+Set Cookie:<input type="text" placeholder="enter your name" id="name"><input type="button" value="set cookie" id="submit">
+<br/>
+Get Cookie:<input type="button" id="get" value="get cookie">
+
+<br/><br/><br/>
+<hr/>
+<li>cookie 默认作用域为网页</li>
+
+<script type="text/javascript" src="../js/lib/jquery1.8.3.js"></script>
+<script>
+    $(document).ready(function(){
+        //设置cookie
+        $("#submit").click(function(){
+            console.log(document.cookie);
+            var c_name='username';
+            var value = $("#name").val();
+            var expiredays = 365;
+            //set cookie
+            var exdate=new Date();
+            exdate.setDate(exdate.getDate()+expiredays);
+            document.cookie=c_name + "=" + escape(value)+ ((expiredays==null) ? "" : "; expires="+exdate.toGMTString());
+            document.cookie='werwerw';
+            console.log(document.cookie);
+        });
+        //获取cookie
+        $("#get").click(function(){
+            var c_name='username';
+            var username = '';
+            if (document.cookie.length>0)
+            {
+                var c_start=document.cookie.indexOf(c_name + "=");
+                if (c_start!=-1)
+                {
+                    c_start=c_start + c_name.length+1;
+                    var c_end=document.cookie.indexOf(";",c_start);
+                    if (c_end==-1) c_end=document.cookie.length;
+                    username = document.cookie.substring(c_start,c_end);
+                }
+            }
+            if (username!=null && username!=""){
+                alert('Welcome again '+username+'!')
+            }
+            else{
+                alert('no cookie !');
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+@charset "UTF-8";
+body,body *{
+    moz-user-select:-moz-none;
+    -webkit-user-select:none
+}
+body .selectable,body input,body textarea,body * .selectable,body * input,body * textarea{
+    -moz-user-select:text !important;
+    -webkit-user-select:text !important
+}
+input,button,a,object,embed{
+    hide-focus:expression(this.hideFocus=true);outline:none;zoom:1
+}
+body{
+    font-family:"微软雅黑","MicroSoft YaHei","STXihei","STHeiti Light","Arial";margin:0;padding:0;background-color:#fff
+}
+a{color:#fff;text-decoration:none;cursor:pointer}
+a:hover{text-decoration:none}
+a:focus{outline:none}
+img,a img{border:none}
+ul,li{list-style:none;margin:0;padding:0}
+.clear{clear:both}
+div{display:block;margin:0;padding:0}
+p{margin:0;padding:0}
+.header2012{
+    position:relative;
+    z-index:10;
+    display:block;
+    min-width:1000px;
+    width:100%;
+    overflow:hidden;
+    height:83px;
+    background:#44122b url(http://s1.ihaveu.com/image/auction/picture/000/006/014/path/6a9de83118005299f5c1d84ef6172666.jpg?1328594756) repeat-x left top;
+    -webkit-box-shadow:0 0 5px rgba(0,0,0,0.6);-moz-box-shadow:0 0 5px rgba(0,0,0,0.6);box-shadow:0 0 5px rgba(0,0,0,0.6)
+}
+.header2012 .ihaveu_text{
+    display:block;
+    width:175px;
+    height:49px;
+    position:absolute;
+    top:35px;
+    left:0;
+    z-index:5;
+    background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/ihaveu_text-d92943b5ae255e069cff582a0f21e9be.jpg) no-repeat left top
+}
+.header2012 .ihaveu_text span{display:none;color:#fff;font-size:12px}
+.header2012 .purplegold{
+    z-index:10;
+    position:relative;
+    display:block;
+    height:35px;
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 5px 5px rgba(0,0,0,0.3)
+}
+.header2012 .purplegold .logo{
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:block;
+    width:150px;
+    height:35px;
+    background:url(http://i1.ihaveu.net/image/auction/picture/000/029/441/path/cfc52fe4.png) no-repeat 0px 0px;
+    _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i1.ihaveu.net/image/auction/picture/000/029/441/path/cfc52fe4.png')
+}
+.header2012 .purplegold .logo:hover{
+    background:url(http://i3.ihaveu.net/image/auction/picture/000/029/440/path/a6942cec.png) no-repeat 0px 0px;
+    _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://i3.ihaveu.net/image/auction/picture/000/029/440/path/a6942cec.png')
+}
+.header2012 .purplegold .logo span{display:none}
+.header2012 .purplegold .menu{
+    position:absolute;left:50%;margin-left:-370px;top:0;width:656px;_width:700px;height:35px;overflow:hidden;
+    display:inline-block;*display:inline;zoom:1;text-align:center;font-size:0
+}
+.header2012 .purplegold .menu a{
+    display:inline-block;*display:inline;zoom:1;overflow:hidden;
+    height:35px;padding:0 18px;_padding:0 16px;_float:left;font-size:14px;color:#664d21;
+    line-height:35px;*line-height:36px;_line-height:38px;font-weight:normal;vertical-align:top;text-shadow:1px 1px 0 rgba(255,255,255,0.3)
+}
+.header2012 .purplegold .menu a.current{
+    color:#fff;text-shadow:1px 1px 0 #664d21;
+    background:url(http://s1.ihaveu.com/image/auction/picture/000/008/717/path/39a4bbdb.gif?1334732194) no-repeat center bottom
+}
+.header2012 .purplegold .menu a.sales{margin-left:20px}
+.header2012 .purplegold .menu .ihaveu_story{padding:0;margin-left:20px}
+.header2012 .purplegold .menu .ihaveu_story span{
+    display:block;width:100px;height:35px;
+    background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/ihaveu_story-dc36f0fb8ff5457ee847aa8270b5156d.png) no-repeat 0px 0px;
+    _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/core/layouts/flash_header/ihaveu_story_ie1.png')
+}
+.header2012 .purplegold .menu .ihaveu_story:hover span{
+    background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/ihaveu_story-dc36f0fb8ff5457ee847aa8270b5156d.png) no-repeat 0px -44px;
+    _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/assets/core/layouts/flash_header/ihaveu_story_ie2.png')
+}
+.header2012 .purplegold .userinfo{
+    position:absolute;right:0;top:0;width:200px;height:35px;display:inline-block;*display:inline;zoom:1;text-align:right;text-shadow:0 -1px 0 #664d21
+}
+.header2012 .purplegold .userinfo .uline{
+    position:absolute;top:0px;right:85px;display:block;width:2px;height:35px;
+    background:url(http://s1.ihaveu.com/image/auction/picture/000/006/018/path/81a25204e1d3548a0392510d31e56501.png?1328594955) no-repeat 0px 0px;
+    _background:none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s1.ihaveu.com/image/auction/picture/000/006/018/path/81a25204e1d3548a0392510d31e56501.png?1328594955')
+}
+.header2012 .purplegold .userinfo a{display:inline-block;*display:inline;zoom:1;height:35px;padding:0 10px;font-size:13px;color:#fff;line-height:35px}
+.header2012 .purplegold .userinfo a.ucart{
+    position:absolute;right:120px;top:0;width:30px;text-decoration:underline;padding-left:28px;
+    background:url(http://s1.ihaveu.com/image/auction/picture/000/006/015/path/f6a1692cd6424bcded881f53254527bd.png?1328594917) no-repeat 0px 0px;
+    _background:none
+}
+.header2012 .purplegold .userinfo a.ucart em{
+    _position:absolute;_left:0px;_top:0;_width:24px;_height:35px;_text-decoration:underline;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://s1.ihaveu.com/image/auction/picture/000/006/015/path/f6a1692cd6424bcded881f53254527bd.png?1328594917')
+}
+.header2012 .purplegold .userinfo a.uorder{display:none;position:absolute;right:225px;top:0;width:60px;text-align:center}
+.header2012 .purplegold .userinfo a.umy{position:absolute;right:65px;top:0;width:55px}
+.header2012 .purplegold .userinfo a.ulogout{position:absolute;right:10px;top:0;width:30px;text-align:center}
+.header2012 .purplegold .userinfo a.usignup,.header2012 .purplegold .userinfo a.ulogin{position:absolute;top:0px;width:30px;text-align:center}
+.header2012 .purplegold .userinfo a.usignup{color:#e9f196;right:10px}
+.header2012 .purplegold .userinfo a.usignup:hover{color:#fcffd3}
+.header2012 .purplegold .userinfo a.ulogin{color:#f4f4f4;right:55px}
+.header2012 .purplegold .userinfo a.ulogin:hover{color:#fff}
+.header2012 .purplegold .appurl{position:absolute;top:0;width:125px;height:35px;display:block;left:50%;margin-left:300px;z-index:1;_display:none}
+.header2012 .purplegold .appurl a{height:35px;display:inline-block;cursor:pointer;position:relative}
+.header2012 .purplegold .appurl .weipai:after,.header2012 .purplegold .appurl .mobile:after{
+    position:absolute;top:0;left:0;height:35px;display:block;content:"";opacity:0;
+    -moz-transition-duration:0.4s;-webkit-transition-duration:0.4s;-ms-transition-duration:0.4s;transition-duration:0.4s
+}
+.header2012 .purplegold .appurl .weipai:hover:after,.header2012 .purplegold .appurl .mobile:hover:after{
+    opacity:1;-moz-transition-duration:0.1s;-webkit-transition-duration:0.1s;-ms-transition-duration:0.1s;transition-duration:0.1s
+}
+.header2012 .purplegold .appurl .weipai{
+    width:66px;
+    background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/appurl-e7df34e72664e8b3f64d88050501cd90.png) no-repeat 0px 0px
+}
+.header2012 .purplegold .appurl .weipai:after{
+    width:66px;background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/appurl-e7df34e72664e8b3f64d88050501cd90.png) no-repeat 0px -45px
+}
+.header2012 .purplegold .appurl .mobile{
+    width:59px;
+    background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/appurl-e7df34e72664e8b3f64d88050501cd90.png) no-repeat -66px 0px
+}
+.header2012 .purplegold .appurl .mobile:after{
+    width:59px;
+    background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/appurl-e7df34e72664e8b3f64d88050501cd90.png) no-repeat -66px -45px
+}
+.header2012 .js_content{display:block;text-align:center;margin:0 auto 0;height:35px;overflow:hidden;position:relative;top:9px;z-index:1}
+.header2012 .js_content a{
+    -webkit-transition:all,0.5s,ease-in-out,0s;-moz-transition:all,0.5s,ease-in-out,0s;-o-transition:all,0.5s,ease-in-out,0s;transition:all,0.5s,ease-in-out,0s;
+    height:35px;padding:0 5px;font-size:14px;font-weight:normal;line-height:31px;color:#dcd3c3;text-decoration:none
+}
+.header2012 .js_content a:hover{color:#fff;text-decoration:none}
+.header2012 .menuli5 a{text-align:center;line-height:31px;color:#b06b8c;padding:0 9px}
+.header2012 .menuli5 a.lititle:hover{color:#b06b8c}
+.header2012 .menuli1{width:718px}.header2012 .menuli1 a{padding:0 5px;margin:0 10px 0 10px;vertical-align:top}
+.header2012 .menuli1 a.redddd{color:#f054a1}
+.header2012 .menuli1 a.yyyddd{color:#fcdca2}
+.header2012 .menuli1 a.redddd:hover,.header2012 .menuli1 a.yyyddd:hover{color:#fff}
+.header2012 .menuli1 .weixin{
+    width:117px;height:28px;padding:0;margin-top:1px;*margin-top:2px;_margin-top:1px;display:inline-block;
+    transition:none;background:url(//i0.ihaveu.net.cn/assets/core/layouts/flash_header/weixin-31b014edddcfd88f1b02eb0a3c46d9b1.png) no-repeat 0px 0px
+}
+.header2012 .menuli1 .weixin span{display:none}
+.header2012 .menuli1 .weixin:hover{background-position:0 -36px}
+.header2012 .menuli2{width:900px;padding-left:100px}
+.header2012 .menuli3{width:900px;padding-left:118px}
+.header2012 .menuli2 a{padding:0 15px}
+.header2012 .menuli3 a{padding:0 14px}
+.header2012 .menuli4{width:800px;padding-left:75px}
+.header2012 .menuli4 a{padding:0 12px}
+.header2012 .menuli5{width:1110px;padding-left:165px}
+.header2012 .menuli6{width:900px}
+.header2012 .menuli6 a{padding:0 10px;margin:0 0 0 9px}
+.header2012 .menuli7{width:700px}
+.header2012 .menuli7 a{padding:0 15px 0 20px}
+.header2012 .menuli8{padding-left:100px}
+.header2012 .menuli8 a{margin-left:20px}
+.header2012 .menuli8 a.yyyddd{color:#fcdca2}
+.header2012 .menuli9{width:700px}
+.header2012 .menuli9 a{padding:0 15px 0 20px}
+.header2012 .js_content .menuli10_text{width:600px;text-align:center;color:#b06b8c;font-size:15px;margin:0 auto}
+.header2012 .js_content .menuli10_text:hover{color:#b06b8c}
+@media all and (max-width: 1200px){
+    .header2012 .purplegold .appurl{
+        display:none
+    }
+}
+@media \0screen{.header2012 .purplegold .appurl{display:block;margin-left:290px}
+    .header2012 .purplegold .menu a{line-height:36px}
+    .header2012 .menuli1 .weixin{margin-top:2px}
+    .header2012 .menuli1 a{padding-top:1px;line-height:30px;display:inline-block}
+    .header2012 .purplegold .appurl .weipai:after{display:none}
+    .header2012 .purplegold .appurl .weipai:hover:after{display:block}}

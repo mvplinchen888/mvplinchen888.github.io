@@ -1,0 +1,8 @@
+{
+	version:"0.0.1",
+	data:{
+		name:"linchen",
+		age:23,
+		job:"engineer"
+	}
+}
